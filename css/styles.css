@@ -34,7 +34,7 @@ ul {
     margin: 0;
 }
 .sorts {
-    list-style-type: space-counter;
+    /* list-style-type: space-counter; */
    padding   : 0px;
  
 }
@@ -69,7 +69,7 @@ ul {
     margin-bottom: 20px;
 } */
 .sorts {
-  list-style: thumbs;
+  list-style: none;
 }
 /* li {
     list-style-type: space-counter;

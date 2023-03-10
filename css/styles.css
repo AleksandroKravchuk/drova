@@ -404,7 +404,7 @@ width: 500px;
  @media screen and (max-width: 767px) {
 .contact-footer{
 position: absolute;
-top: 46%;
+top: 50%;
 }}
 .contakts__link1:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */

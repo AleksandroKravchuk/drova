@@ -310,9 +310,15 @@ padding-right: 16px;
 }
  @media screen and (min-width: 768px) {
   .header-sektion__item {
-    margin-left: 20px;
-    font-size: 20px;
+    margin-left: 10px;
+    font-size: 16px;
     justify-content: flex-start;
+}}
+ @media screen and (min-width: 1200px) {
+  .header-sektion__item {
+    margin-left: 20px;
+    font-size: 18px;
+    /* justify-content: flex-start; */
 }}
 .contakts {
    position: absolute;
@@ -323,6 +329,11 @@ padding-right: 16px;
     /* display: flex; */
     list-style: none;
 }
+ @media screen and (min-width: 768px) {
+  .contakts {
+  top: 10px;
+   right: 10px;
+}}
  @media screen and (min-width: 1200px) {
   .contakts {
     display: flex;
@@ -340,6 +351,10 @@ padding-right: 16px;
     display: block;
     font-size: 16px;
     margin-right: 12px;
+}}
+ @media screen and (min-width: 768px) and (max-width: 1199px){
+.contakts__item:not(last-child) {
+   margin-right: 10px;
 }}
 .contakts__item:not(last-child) {
    margin-bottom: 10px;
@@ -371,6 +386,17 @@ padding-right: 16px;
    background-size: cover;
     align-items: center;
     margin-right: 5px;
+    margin-top: -10px;
+}
+.contakts__icon11 {
+    /* background-color: #2196F3; */
+    background-image: url(../img/phone.png);
+       background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+    align-items: center;
+    margin-right: 5px;
+    /* margin-top: -10px; */
 }
 .contakts__link1 {
     color: blue;
@@ -384,7 +410,16 @@ padding-right: 16px;
 }
  @media screen and (min-width: 768px) {
 .contakts__link1{
- font-size: 33px;
+ font-size: 26px;
+}}
+ @media screen and (max-width: 1199px) {
+.phone_box {
+  display: flex;
+}}
+ @media screen and (min-width: 768px) {
+.phone{
+display: flex;
+align-items: center;
 }}
 .contact-footer {
     margin-top: 20px;
@@ -393,9 +428,10 @@ padding-right: 16px;
     border-radius: 30px;
     padding-left: 12px;
   padding-right: 12px;
-  display: flex;
+  text-align: center;
+  /* display: flex;
   align-items: center;
-     justify-content: center;
+     justify-content: center; */
 }
  @media screen and (min-width: 768px) {
 .contact-footer{

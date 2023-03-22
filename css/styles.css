@@ -324,11 +324,16 @@ padding-right: 16px;
    position: absolute;
    z-index: 1000;
    top: 10px;
-   right: 50px;
+   /* right: 50px; */
    /* right: 100px; */
     /* display: flex; */
     list-style: none;
 }
+ @media screen and (max-width: 767px) {
+  .contakts {
+  top: 10px;
+   right: 10px;
+}}
  @media screen and (min-width: 768px) {
   .contakts {
   top: 10px;
@@ -356,9 +361,15 @@ padding-right: 16px;
 .contakts__item:not(last-child) {
    margin-right: 10px;
 }}
-.contakts__item:not(last-child) {
+ @media screen and (min-width: 768px) {
+  .contakts__item:not(last-child) {
    margin-bottom: 10px;
-}
+}}
+ @media screen and (max-width: 767px) {
+  .contakts__item:not(last-child) {
+   margin-bottom: 4px;
+}}
+
  @media screen and (min-width: 1200px) {
 .contakts__item:not(last-child) {
     margin-right: 10px;
@@ -369,6 +380,10 @@ padding-right: 16px;
     color: #2F303A;
     display: flex;
 }
+ @media screen and (max-width: 767px){
+.contakts__link {
+   font-size: 12px;
+}}
 .contakts__icon {
     /* background-color: #2196F3; */
     background-image: url(../img/mail.png);
@@ -412,9 +427,14 @@ padding-right: 16px;
 .contakts__link1{
  font-size: 26px;
 }}
- @media screen and (max-width: 1199px) {
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
 .phone_box {
   display: flex;
+}}
+ @media screen and (max-width: 767px) {
+.phone{
+display: flex;
+align-items: center;
 }}
  @media screen and (min-width: 768px) {
 .phone{
